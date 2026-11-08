@@ -12,8 +12,8 @@ import os
 ROOT = os.path.dirname(os.path.abspath(__file__))
 DEVELOPER = "Barış Kantar"
 EMAIL = "bariskantar@gmail.com"
-UPDATED = {"en": "8 November 2026", "tr": "8 Kasım 2026", "es": "8 de noviembre de 2026",
-           "pt": "8 de novembro de 2026", "de": "8. November 2026", "fr": "8 novembre 2026"}
+UPDATED = {"en": "9 November 2026", "tr": "9 Kasım 2026", "es": "9 de noviembre de 2026",
+           "pt": "9 de novembro de 2026", "de": "9. November 2026", "fr": "9 novembre 2026"}
 GOOGLE_PARTNERS = "https://policies.google.com/technologies/partner-sites"
 GOOGLE_PRIVACY = "https://policies.google.com/privacy"
 UNITY_PRIVACY = "https://unity.com/legal/privacy-policy"
@@ -44,7 +44,7 @@ P = {
                 "Buying “Remove ads” stops the ads shown between levels. Rewarded ads, which you choose to watch for a hint or extra time, stay available.",
             ]),
             ("In-app purchases", [
-                "Purchases are made through the App Store and processed by Apple. I never receive your payment details. The game uses Unity In-App Purchasing by Unity Technologies to talk to the App Store; it checks your purchases on your device. See {apple_privacy_link} and {unity_privacy_link}.",
+                "Purchases are made through the App Store and processed by Apple. I never receive your payment details. The game uses Unity In-App Purchasing by Unity Technologies to talk to the App Store; it checks your purchases on your device. With each purchase, Unity also receives the product, its price and currency, the transaction number, device identifiers (such as the identifier for vendor, and the advertising identifier if you allow tracking) and device details such as model, system version and language, which Unity uses for purchase analytics. See {apple_privacy_link} and {unity_privacy_link}.",
             ]),
             ("Children", [
                 "The game is not directed at children under 13, and I do not knowingly collect personal information from them.",
@@ -81,7 +81,7 @@ P = {
                 "“Reklamları kaldır”ı satın almak bölüm aralarındaki reklamları kapatır. İpucu ya da ek süre için kendi isteğinle izlediğin ödüllü reklamlar kullanılabilir kalır.",
             ]),
             ("Uygulama içi satın almalar", [
-                "Satın almalar App Store üzerinden yapılır ve Apple tarafından işlenir; ödeme bilgilerin bana hiçbir zaman ulaşmaz. Oyun App Store ile konuşmak için Unity Technologies’in Unity In-App Purchasing kitaplığını kullanır; satın almalarını cihazında doğrular. Bkz. {apple_privacy_link} ve {unity_privacy_link}.",
+                "Satın almalar App Store üzerinden yapılır ve Apple tarafından işlenir; ödeme bilgilerin bana hiçbir zaman ulaşmaz. Oyun App Store ile konuşmak için Unity Technologies’in Unity In-App Purchasing kitaplığını kullanır; satın almalarını cihazında doğrular. Her satın almada Unity ayrıca ürünü, fiyatını ve para birimini, işlem numarasını, cihaz kimliklerini (satıcı kimliği gibi; izlemeye izin verdiysen reklam kimliği de) ve model, sistem sürümü, dil gibi cihaz bilgilerini alır; bunları satın alma analizleri için kullanır. Bkz. {apple_privacy_link} ve {unity_privacy_link}.",
             ]),
             ("Çocuklar", [
                 "Oyun 13 yaşından küçük çocuklara yönelik değildir ve onlardan bilerek kişisel bilgi toplamam.",
@@ -118,7 +118,7 @@ P = {
                 "Comprar “Quitar anuncios” elimina los anuncios entre niveles. Los anuncios con recompensa, que eliges ver para obtener una pista o tiempo extra, siguen disponibles.",
             ]),
             ("Compras dentro de la app", [
-                "Las compras se hacen en el App Store y las procesa Apple; nunca recibo tus datos de pago. El juego usa Unity In-App Purchasing, de Unity Technologies, para comunicarse con el App Store; verifica tus compras en tu dispositivo. Consulta la {apple_privacy_link} y la {unity_privacy_link}.",
+                "Las compras se hacen en el App Store y las procesa Apple; nunca recibo tus datos de pago. El juego usa Unity In-App Purchasing, de Unity Technologies, para comunicarse con el App Store; verifica tus compras en tu dispositivo. Con cada compra, Unity también recibe el producto, su precio y moneda, el número de transacción, identificadores del dispositivo (como el identificador de proveedor y, si permites el rastreo, el identificador de publicidad) y datos del dispositivo como modelo, versión del sistema e idioma, que usa para analizar las compras. Consulta la {apple_privacy_link} y la {unity_privacy_link}.",
             ]),
             ("Menores", [
                 "El juego no está dirigido a menores de 13 años y no recopilo a sabiendas información personal de ellos.",
@@ -155,7 +155,7 @@ P = {
                 "Comprar “Remover anúncios” acaba com os anúncios entre as fases. Os anúncios com recompensa, que você escolhe assistir para ganhar uma dica ou tempo extra, continuam disponíveis.",
             ]),
             ("Compras no app", [
-                "As compras são feitas pela App Store e processadas pela Apple; eu nunca recebo seus dados de pagamento. O jogo usa o Unity In-App Purchasing, da Unity Technologies, para se comunicar com a App Store; ele verifica suas compras no seu dispositivo. Veja a {apple_privacy_link} e a {unity_privacy_link}.",
+                "As compras são feitas pela App Store e processadas pela Apple; eu nunca recebo seus dados de pagamento. O jogo usa o Unity In-App Purchasing, da Unity Technologies, para se comunicar com a App Store; ele verifica suas compras no seu dispositivo. A cada compra, a Unity também recebe o produto, o preço e a moeda, o número da transação, identificadores do dispositivo (como o identificador de fornecedor e, se você permitir o rastreamento, o identificador de publicidade) e dados do aparelho como modelo, versão do sistema e idioma, que usa para analisar as compras. Veja a {apple_privacy_link} e a {unity_privacy_link}.",
             ]),
             ("Crianças", [
                 "O jogo não é direcionado a crianças menores de 13 anos, e eu não coleto intencionalmente informações pessoais delas.",
@@ -192,7 +192,7 @@ P = {
                 "Der Kauf von „Werbung entfernen“ beendet die Werbung zwischen den Levels. Belohnte Werbung, die du freiwillig für einen Tipp oder zusätzliche Zeit ansiehst, bleibt verfügbar.",
             ]),
             ("In-App-Käufe", [
-                "Käufe laufen über den App Store und werden von Apple abgewickelt; deine Zahlungsdaten erhalte ich nie. Das Spiel nutzt Unity In-App Purchasing von Unity Technologies, um mit dem App Store zu kommunizieren; es prüft deine Käufe auf deinem Gerät. Siehe {apple_privacy_link} und {unity_privacy_link}.",
+                "Käufe laufen über den App Store und werden von Apple abgewickelt; deine Zahlungsdaten erhalte ich nie. Das Spiel nutzt Unity In-App Purchasing von Unity Technologies, um mit dem App Store zu kommunizieren; es prüft deine Käufe auf deinem Gerät. Bei jedem Kauf erhält Unity außerdem das Produkt, Preis und Währung, die Transaktionsnummer, Gerätekennungen (etwa die Anbieter-ID und, wenn du Tracking erlaubst, die Werbe-ID) sowie Geräteangaben wie Modell, Systemversion und Sprache und nutzt sie für Kaufanalysen. Siehe {apple_privacy_link} und {unity_privacy_link}.",
             ]),
             ("Kinder", [
                 "Das Spiel richtet sich nicht an Kinder unter 13 Jahren, und ich erhebe nicht wissentlich personenbezogene Daten von ihnen.",
@@ -229,7 +229,7 @@ P = {
                 "Acheter « Supprimer les pubs » arrête les publicités entre les niveaux. Les publicités récompensées, que tu choisis de regarder pour un indice ou du temps en plus, restent disponibles.",
             ]),
             ("Achats intégrés", [
-                "Les achats se font sur l’App Store et sont traités par Apple ; je ne reçois jamais tes informations de paiement. Le jeu utilise Unity In-App Purchasing, de Unity Technologies, pour communiquer avec l’App Store ; il vérifie tes achats sur ton appareil. Voir la {apple_privacy_link} et la {unity_privacy_link}.",
+                "Les achats se font sur l’App Store et sont traités par Apple ; je ne reçois jamais tes informations de paiement. Le jeu utilise Unity In-App Purchasing, de Unity Technologies, pour communiquer avec l’App Store ; il vérifie tes achats sur ton appareil. À chaque achat, Unity reçoit aussi le produit, son prix et sa devise, le numéro de transaction, des identifiants de l’appareil (comme l’identifiant fournisseur et, si tu autorises le suivi, l’identifiant publicitaire) et des informations sur l’appareil comme le modèle, la version du système et la langue, qu’il utilise pour analyser les achats. Voir la {apple_privacy_link} et la {unity_privacy_link}.",
             ]),
             ("Enfants", [
                 "Le jeu ne s’adresse pas aux enfants de moins de 13 ans, et je ne collecte pas sciemment d’informations personnelles les concernant.",
