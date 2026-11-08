@@ -319,6 +319,27 @@ def policy(code):
     return page(HTML_LANG[code], f"{t['title']} · Whose Bag?", "\n".join(parts))
 
 
+# The support page (the App Store's support URL): a short answer per language, then the contact.
+SUPPORT = [
+    ("en", "Help", "Whose Bag? has no account: your progress is saved on your device. Bought “Remove ads” on another device or after reinstalling? Open Settings → Restore purchases. For anything else, write to"),
+    ("tr", "Yardım", "Whose Bag?’de hesap yoktur; ilerlemen cihazında saklanır. “Reklamları kaldır”ı başka bir cihazda ya da yeniden yüklemeden önce aldıysan Ayarlar → Satın almaları geri yükle’ye dokun. Diğer her şey için yaz:"),
+    ("es", "Ayuda", "Whose Bag? no tiene cuentas: tu progreso se guarda en tu dispositivo. ¿Compraste “Quitar anuncios” en otro dispositivo o antes de reinstalar? Abre Ajustes → Restaurar compras. Para cualquier otra cosa, escribe a"),
+    ("pt", "Ajuda", "Whose Bag? não tem contas: seu progresso fica salvo no seu dispositivo. Comprou “Remover anúncios” em outro aparelho ou antes de reinstalar? Abra Configurações → Restaurar compras. Para qualquer outra coisa, escreva para"),
+    ("de", "Hilfe", "Whose Bag? hat keine Konten: Dein Fortschritt wird auf deinem Gerät gespeichert. „Werbung entfernen“ auf einem anderen Gerät oder vor einer Neuinstallation gekauft? Öffne Einstellungen → Käufe wiederherstellen. Für alles andere schreib an"),
+    ("fr", "Aide", "Whose Bag? n’a pas de compte : ta progression est enregistrée sur ton appareil. Tu as acheté « Supprimer les pubs » sur un autre appareil ou avant de réinstaller ? Ouvre Réglages → Restaurer les achats. Pour tout le reste, écris à"),
+]
+
+
+def support():
+    parts = ['<p class="game">Whose Bag?</p>', "<h1>Help · Yardım · Ayuda · Ajuda · Hilfe · Aide</h1>"]
+    for code, heading, text in SUPPORT:
+        policy = "privacy/" + ("" if code == "en" else code + "/")
+        parts.append(f'<h2 lang="{HTML_LANG[code]}">{html.escape(heading)}</h2>')
+        parts.append(f'<p lang="{HTML_LANG[code]}">{html.escape(text)} {link("mailto:" + EMAIL, EMAIL)}. {link(policy, P[code]["title"])}</p>')
+    parts.append(f'<footer>© 2026 {html.escape(DEVELOPER)}</footer>')
+    return page("en", "Whose Bag? · Help", "\n".join(parts))
+
+
 def write(path, text):
     full = os.path.join(ROOT, path)
     os.makedirs(os.path.dirname(full), exist_ok=True)
@@ -329,16 +350,17 @@ def write(path, text):
 def main():
     for code, _ in LANGS:
         write(f"whose-bag/privacy/{'' if code == 'en' else code + '/'}index.html", policy(code))
+    write("whose-bag/index.html", support())
     home = "\n".join([
         f"<h1>{html.escape(DEVELOPER)}</h1>",
         "<p>Independent mobile games.</p>",
         "<h2>Whose Bag?</h2>",
         "<p>Pack a passenger’s suitcase before the flight leaves, then guess whose bag it is.</p>",
-        f'<p>{link("whose-bag/privacy/", "Privacy Policy")}</p>',
+        f'<p>{link("whose-bag/", "Help")} · {link("whose-bag/privacy/", "Privacy Policy")}</p>',
         f'<footer>{link("mailto:" + EMAIL, EMAIL)}</footer>',
     ])
     write("index.html", page("en", DEVELOPER, home))
-    print("built: index.html + whose-bag/privacy in", len(LANGS), "languages")
+    print("built: index.html, whose-bag/ (help) and whose-bag/privacy in", len(LANGS), "languages")
 
 
 if __name__ == "__main__":
