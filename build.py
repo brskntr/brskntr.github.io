@@ -12,8 +12,8 @@ import os
 ROOT = os.path.dirname(os.path.abspath(__file__))
 DEVELOPER = "Barış Kantar"
 EMAIL = "bariskantar@gmail.com"
-UPDATED = {"en": "9 November 2026", "tr": "9 Kasım 2026", "es": "9 de noviembre de 2026",
-           "pt": "9 de novembro de 2026", "de": "9. November 2026", "fr": "9 novembre 2026"}
+UPDATED = {"en": "10 November 2026", "tr": "10 Kasım 2026", "es": "10 de noviembre de 2026",
+           "pt": "10 de novembro de 2026", "de": "10. November 2026", "fr": "10 novembre 2026"}
 GOOGLE_PARTNERS = "https://policies.google.com/technologies/partner-sites"
 GOOGLE_PRIVACY = "https://policies.google.com/privacy"
 UNITY_PRIVACY = "https://unity.com/legal/privacy-policy"
@@ -38,6 +38,10 @@ P = {
                 "The game shows ads through Google AdMob, a service of Google. To show and measure ads and to prevent fraud, Google may collect: your device’s advertising identifier (on iOS, only if you allow tracking), your IP address, device and app information such as model, operating system and language, an approximate location derived from your IP address, and how you interact with ads.",
                 "Where the law requires it (the European Economic Area, the United Kingdom and Switzerland), personalised ads are only shown with your consent. Without it, Google shows non-personalised ads. How Google uses this information is explained at {google_partners} and in {google_privacy_link}.",
             ]),
+            ("Game statistics (Google Analytics for Firebase)", [
+                "To see which levels are too hard and how the game is played, the game sends events to Google Analytics for Firebase, a service of Google: when a level starts, is finished or runs out of time, which option you pick when time runs out (extra time, try again, an easier version) and how full the suitcase was. With these events Firebase collects a random identifier for this installation of the game, device and app information such as model, system version, language and app version, an approximate location (country and region) derived from your IP address, and session details such as when and for how long you play.",
+                "Firebase is not used for advertising: the game does not let it read your advertising identifier or use this data for ads. I see the statistics only as totals and charts, never with your name or contact details. They are kept for 14 months. See {google_privacy_link}.",
+            ]),
             ("Your choices", [
                 "If you are in the EEA, the UK or Switzerland, the game asks for your consent the first time it starts. You can change your answer at any time in the game: Settings → Ad privacy choices.",
                 "On iPhone and iPad, iOS asks whether the game may track you. You can change this at any time in the device’s Settings → Privacy & Security → Tracking. You can also reset your advertising identifier in your device settings.",
@@ -50,7 +54,7 @@ P = {
                 "The game is not directed at children under 13, and I do not knowingly collect personal information from them.",
             ]),
             ("Keeping and deleting data", [
-                "Deleting the game deletes everything it saved on your device. Information collected by Google is kept and deleted under Google’s own policy.",
+                "Deleting the game deletes everything it saved on your device. Information collected by Google is kept and deleted under Google’s own policy; game statistics are deleted after 14 months.",
             ]),
             ("Changes", [
                 "If this policy changes, the new version will be posted on this page with a new date.",
@@ -75,6 +79,10 @@ P = {
                 "Oyun reklamları Google’ın hizmeti olan Google AdMob üzerinden gösterir. Reklamları göstermek, ölçmek ve sahtekârlığı önlemek için Google şunları toplayabilir: cihazının reklam kimliği (iOS’ta yalnızca izlemeye izin verirsen), IP adresin, model, işletim sistemi ve dil gibi cihaz ve uygulama bilgileri, IP adresinden çıkarılan yaklaşık konum ve reklamlarla etkileşimin.",
                 "Yasanın gerektirdiği yerlerde (Avrupa Ekonomik Alanı, Birleşik Krallık ve İsviçre) kişiselleştirilmiş reklamlar yalnızca onayınla gösterilir; onay vermezsen Google kişiselleştirilmemiş reklam gösterir. Google’ın bu bilgileri nasıl kullandığı {google_partners} adresinde ve {google_privacy_link} içinde anlatılıyor.",
             ]),
+            ("Oyun istatistikleri (Google Analytics for Firebase)", [
+                "Hangi bölümlerin fazla zor olduğunu ve oyunun nasıl oynandığını görmek için oyun, Google’ın hizmeti olan Google Analytics for Firebase’e olaylar gönderir: bir bölüm başladığında, bittiğinde ya da süre dolduğunda, süre dolunca hangi seçeneği seçtiğin (ek süre, tekrar dene, daha kolay versiyon) ve bavulun ne kadar dolu olduğu. Firebase bu olaylarla birlikte oyunun bu kurulumu için rastgele bir kimlik, model, sistem sürümü, dil ve uygulama sürümü gibi cihaz ve uygulama bilgileri, IP adresinden çıkarılan yaklaşık konum (ülke ve bölge) ve ne zaman, ne kadar süre oynadığın gibi oturum bilgilerini toplar.",
+                "Firebase reklam için kullanılmaz: oyun onun reklam kimliğini okumasına ya da bu verileri reklam için kullanmasına izin vermez. İstatistikleri yalnızca toplamlar ve grafikler olarak görürüm, hiçbir zaman adın ya da iletişim bilgilerinle birlikte değil. 14 ay saklanır. Bkz. {google_privacy_link}.",
+            ]),
             ("Seçeneklerin", [
                 "AEA’da, Birleşik Krallık’ta ya da İsviçre’deysen oyun ilk açılışta onayını sorar. Cevabını oyunda istediğin zaman değiştirebilirsin: Ayarlar → Reklam gizlilik seçenekleri.",
                 "iPhone ve iPad’de iOS, oyunun seni izleyip izleyemeyeceğini sorar. Bunu istediğin zaman cihazın Ayarlar → Gizlilik ve Güvenlik → İzleme bölümünden değiştirebilirsin. Reklam kimliğini de cihaz ayarlarından sıfırlayabilirsin.",
@@ -87,7 +95,7 @@ P = {
                 "Oyun 13 yaşından küçük çocuklara yönelik değildir ve onlardan bilerek kişisel bilgi toplamam.",
             ]),
             ("Verilerin saklanması ve silinmesi", [
-                "Oyunu silmek, cihazında sakladığı her şeyi siler. Google’ın topladığı bilgiler Google’ın kendi politikasına göre saklanır ve silinir.",
+                "Oyunu silmek, cihazında sakladığı her şeyi siler. Google’ın topladığı bilgiler Google’ın kendi politikasına göre saklanır ve silinir; oyun istatistikleri 14 ay sonra silinir.",
             ]),
             ("Değişiklikler", [
                 "Bu politika değişirse yeni hâli bu sayfada yeni tarihle yayınlanır.",
@@ -112,6 +120,10 @@ P = {
                 "El juego muestra anuncios a través de Google AdMob, un servicio de Google. Para mostrar y medir anuncios y prevenir fraudes, Google puede recopilar: el identificador de publicidad de tu dispositivo (en iOS, solo si permites el rastreo), tu dirección IP, información del dispositivo y de la app como modelo, sistema operativo e idioma, una ubicación aproximada obtenida de tu IP y cómo interactúas con los anuncios.",
                 "Donde la ley lo exige (Espacio Económico Europeo, Reino Unido y Suiza), los anuncios personalizados solo se muestran con tu consentimiento; sin él, Google muestra anuncios no personalizados. Cómo usa Google esta información se explica en {google_partners} y en la {google_privacy_link}.",
             ]),
+            ("Estadísticas del juego (Google Analytics for Firebase)", [
+                "Para ver qué niveles son demasiado difíciles y cómo se juega, el juego envía eventos a Google Analytics for Firebase, un servicio de Google: cuando un nivel empieza, se completa o se acaba el tiempo, qué opción eliges cuando se acaba el tiempo (tiempo extra, reintentar, una versión más fácil) y cuánto se llenó la maleta. Con estos eventos, Firebase recopila un identificador aleatorio de esta instalación del juego, información del dispositivo y de la app como modelo, versión del sistema, idioma y versión de la app, una ubicación aproximada (país y región) obtenida de tu IP y datos de sesión como cuándo y cuánto tiempo juegas.",
+                "Firebase no se usa para publicidad: el juego no le permite leer tu identificador de publicidad ni usar estos datos para anuncios. Solo veo las estadísticas como totales y gráficos, nunca con tu nombre ni tus datos de contacto. Se conservan 14 meses. Consulta la {google_privacy_link}.",
+            ]),
             ("Tus opciones", [
                 "Si estás en el EEE, el Reino Unido o Suiza, el juego te pide tu consentimiento la primera vez que se abre. Puedes cambiar tu respuesta cuando quieras en el juego: Ajustes → Opciones de privacidad de anuncios.",
                 "En iPhone y iPad, iOS te pregunta si el juego puede rastrearte. Puedes cambiarlo cuando quieras en Ajustes del dispositivo → Privacidad y seguridad → Rastreo. También puedes restablecer tu identificador de publicidad en los ajustes del dispositivo.",
@@ -124,7 +136,7 @@ P = {
                 "El juego no está dirigido a menores de 13 años y no recopilo a sabiendas información personal de ellos.",
             ]),
             ("Conservación y eliminación de datos", [
-                "Al borrar el juego se borra todo lo que guardó en tu dispositivo. La información que recopila Google se conserva y elimina según la política de Google.",
+                "Al borrar el juego se borra todo lo que guardó en tu dispositivo. La información que recopila Google se conserva y elimina según la política de Google; las estadísticas del juego se borran a los 14 meses.",
             ]),
             ("Cambios", [
                 "Si esta política cambia, la nueva versión se publicará en esta página con una nueva fecha.",
@@ -149,6 +161,10 @@ P = {
                 "O jogo mostra anúncios pelo Google AdMob, um serviço do Google. Para exibir e medir anúncios e evitar fraudes, o Google pode coletar: o identificador de publicidade do seu dispositivo (no iOS, só se você permitir o rastreamento), seu endereço IP, informações do dispositivo e do app como modelo, sistema operacional e idioma, uma localização aproximada obtida pelo IP e como você interage com os anúncios.",
                 "Onde a lei exige (Espaço Econômico Europeu, Reino Unido e Suíça), anúncios personalizados só são exibidos com o seu consentimento; sem ele, o Google mostra anúncios não personalizados. Como o Google usa essas informações está explicado em {google_partners} e na {google_privacy_link}.",
             ]),
+            ("Estatísticas do jogo (Google Analytics for Firebase)", [
+                "Para ver quais fases estão difíceis demais e como o jogo é jogado, o jogo envia eventos ao Google Analytics for Firebase, um serviço do Google: quando uma fase começa, é concluída ou o tempo acaba, qual opção você escolhe quando o tempo acaba (tempo extra, tentar de novo, uma versão mais fácil) e quanto a mala estava cheia. Com esses eventos, o Firebase coleta um identificador aleatório desta instalação do jogo, informações do aparelho e do app como modelo, versão do sistema, idioma e versão do app, uma localização aproximada (país e região) obtida pelo seu IP e dados da sessão, como quando e por quanto tempo você joga.",
+                "O Firebase não é usado para publicidade: o jogo não permite que ele leia seu identificador de publicidade nem use esses dados para anúncios. Vejo as estatísticas apenas como totais e gráficos, nunca com seu nome ou dados de contato. Elas são guardadas por 14 meses. Veja a {google_privacy_link}.",
+            ]),
             ("Suas escolhas", [
                 "Se você estiver no EEE, no Reino Unido ou na Suíça, o jogo pede seu consentimento na primeira vez em que é aberto. Você pode mudar sua resposta quando quiser no jogo: Configurações → Opções de privacidade de anúncios.",
                 "No iPhone e no iPad, o iOS pergunta se o jogo pode rastrear você. Você pode mudar isso quando quiser em Ajustes do dispositivo → Privacidade e Segurança → Rastreamento. Também pode redefinir o identificador de publicidade nos ajustes do dispositivo.",
@@ -161,7 +177,7 @@ P = {
                 "O jogo não é direcionado a crianças menores de 13 anos, e eu não coleto intencionalmente informações pessoais delas.",
             ]),
             ("Guarda e exclusão de dados", [
-                "Apagar o jogo apaga tudo o que ele salvou no seu dispositivo. As informações coletadas pelo Google são guardadas e excluídas conforme a política do próprio Google.",
+                "Apagar o jogo apaga tudo o que ele salvou no seu dispositivo. As informações coletadas pelo Google são guardadas e excluídas conforme a política do próprio Google; as estatísticas do jogo são excluídas após 14 meses.",
             ]),
             ("Alterações", [
                 "Se esta política mudar, a nova versão será publicada nesta página com uma nova data.",
@@ -186,6 +202,10 @@ P = {
                 "Das Spiel zeigt Werbung über Google AdMob, einen Dienst von Google. Um Werbung anzuzeigen, zu messen und Betrug zu verhindern, kann Google Folgendes erheben: die Werbe-ID deines Geräts (unter iOS nur, wenn du Tracking erlaubst), deine IP-Adresse, Geräte- und App-Informationen wie Modell, Betriebssystem und Sprache, einen aus der IP-Adresse abgeleiteten ungefähren Standort sowie deine Interaktionen mit Werbung.",
                 "Wo das Gesetz es verlangt (Europäischer Wirtschaftsraum, Vereinigtes Königreich und Schweiz), wird personalisierte Werbung nur mit deiner Einwilligung gezeigt; ohne sie zeigt Google nicht personalisierte Werbung. Wie Google diese Informationen nutzt, steht unter {google_partners} und in der {google_privacy_link}.",
             ]),
+            ("Spielstatistiken (Google Analytics for Firebase)", [
+                "Um zu sehen, welche Level zu schwer sind und wie das Spiel gespielt wird, sendet das Spiel Ereignisse an Google Analytics for Firebase, einen Dienst von Google: wenn ein Level beginnt, geschafft wird oder die Zeit abläuft, welche Option du wählst, wenn die Zeit abläuft (Extrazeit, nochmal, eine leichtere Version), und wie voll der Koffer war. Mit diesen Ereignissen erhebt Firebase eine zufällige Kennung dieser Installation des Spiels, Geräte- und App-Informationen wie Modell, Systemversion, Sprache und App-Version, einen aus deiner IP-Adresse abgeleiteten ungefähren Standort (Land und Region) sowie Sitzungsdaten, etwa wann und wie lange du spielst.",
+                "Firebase wird nicht für Werbung genutzt: Das Spiel erlaubt ihm weder, deine Werbe-ID zu lesen, noch diese Daten für Werbung zu verwenden. Ich sehe die Statistiken nur als Summen und Diagramme, nie mit deinem Namen oder deinen Kontaktdaten. Sie werden 14 Monate gespeichert. Siehe {google_privacy_link}.",
+            ]),
             ("Deine Wahlmöglichkeiten", [
                 "Wenn du dich im EWR, im Vereinigten Königreich oder in der Schweiz befindest, fragt das Spiel beim ersten Start nach deiner Einwilligung. Du kannst deine Antwort jederzeit im Spiel ändern: Einstellungen → Werbe-Datenschutzoptionen.",
                 "Auf iPhone und iPad fragt iOS, ob das Spiel dich tracken darf. Das kannst du jederzeit in den Geräteeinstellungen unter Datenschutz & Sicherheit → Tracking ändern. Deine Werbe-ID kannst du ebenfalls in den Geräteeinstellungen zurücksetzen.",
@@ -198,7 +218,7 @@ P = {
                 "Das Spiel richtet sich nicht an Kinder unter 13 Jahren, und ich erhebe nicht wissentlich personenbezogene Daten von ihnen.",
             ]),
             ("Speicherung und Löschung", [
-                "Wenn du das Spiel löschst, wird alles gelöscht, was es auf deinem Gerät gespeichert hat. Von Google erhobene Informationen werden nach Googles eigener Richtlinie gespeichert und gelöscht.",
+                "Wenn du das Spiel löschst, wird alles gelöscht, was es auf deinem Gerät gespeichert hat. Von Google erhobene Informationen werden nach Googles eigener Richtlinie gespeichert und gelöscht; Spielstatistiken werden nach 14 Monaten gelöscht.",
             ]),
             ("Änderungen", [
                 "Wenn sich diese Erklärung ändert, wird die neue Fassung mit neuem Datum auf dieser Seite veröffentlicht.",
@@ -223,6 +243,10 @@ P = {
                 "Le jeu affiche des publicités via Google AdMob, un service de Google. Pour afficher et mesurer les publicités et lutter contre la fraude, Google peut collecter : l’identifiant publicitaire de ton appareil (sur iOS, seulement si tu autorises le suivi), ton adresse IP, des informations sur l’appareil et l’app comme le modèle, le système d’exploitation et la langue, une localisation approximative déduite de ton IP, et tes interactions avec les publicités.",
                 "Là où la loi l’exige (Espace économique européen, Royaume-Uni et Suisse), les publicités personnalisées ne sont affichées qu’avec ton consentement ; sans lui, Google affiche des publicités non personnalisées. L’utilisation de ces informations par Google est expliquée sur {google_partners} et dans la {google_privacy_link}.",
             ]),
+            ("Statistiques du jeu (Google Analytics for Firebase)", [
+                "Pour voir quels niveaux sont trop difficiles et comment on joue, le jeu envoie des événements à Google Analytics for Firebase, un service de Google : quand un niveau commence, est réussi ou que le temps est écoulé, l’option que tu choisis quand le temps est écoulé (temps supplémentaire, réessayer, une version plus facile) et le taux de remplissage de la valise. Avec ces événements, Firebase collecte un identifiant aléatoire de cette installation du jeu, des informations sur l’appareil et l’app comme le modèle, la version du système, la langue et la version de l’app, une localisation approximative (pays et région) déduite de ton IP, et des données de session comme le moment et la durée de jeu.",
+                "Firebase n’est pas utilisé pour la publicité : le jeu ne lui permet ni de lire ton identifiant publicitaire ni d’utiliser ces données pour des publicités. Je vois ces statistiques uniquement sous forme de totaux et de graphiques, jamais avec ton nom ou tes coordonnées. Elles sont conservées 14 mois. Voir la {google_privacy_link}.",
+            ]),
             ("Tes choix", [
                 "Si tu te trouves dans l’EEE, au Royaume-Uni ou en Suisse, le jeu te demande ton consentement au premier lancement. Tu peux modifier ta réponse à tout moment dans le jeu : Réglages → Choix de confidentialité des pubs.",
                 "Sur iPhone et iPad, iOS te demande si le jeu peut te suivre. Tu peux modifier ce choix à tout moment dans les Réglages de l’appareil → Confidentialité et sécurité → Suivi. Tu peux aussi réinitialiser ton identifiant publicitaire dans les réglages de l’appareil.",
@@ -235,7 +259,7 @@ P = {
                 "Le jeu ne s’adresse pas aux enfants de moins de 13 ans, et je ne collecte pas sciemment d’informations personnelles les concernant.",
             ]),
             ("Conservation et suppression", [
-                "Supprimer le jeu supprime tout ce qu’il a enregistré sur ton appareil. Les informations collectées par Google sont conservées et supprimées selon la politique de Google.",
+                "Supprimer le jeu supprime tout ce qu’il a enregistré sur ton appareil. Les informations collectées par Google sont conservées et supprimées selon la politique de Google ; les statistiques du jeu sont supprimées après 14 mois.",
             ]),
             ("Modifications", [
                 "Si cette politique change, la nouvelle version sera publiée sur cette page avec une nouvelle date.",
