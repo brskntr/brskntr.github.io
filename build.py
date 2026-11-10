@@ -41,6 +41,7 @@ P = {
             ("Game statistics (Google Analytics for Firebase)", [
                 "To see which levels are too hard and how the game is played, the game sends events to Google Analytics for Firebase, a service of Google: when a level starts, is finished or runs out of time, which option you pick when time runs out (extra time, try again, an easier version) and how full the suitcase was. With these events Firebase collects a random identifier for this installation of the game, device and app information such as model, system version, language and app version, an approximate location (country and region) derived from your IP address, and session details such as when and for how long you play.",
                 "Firebase is not used for advertising: the game does not let it read your advertising identifier or use this data for ads. I see the statistics only as totals and charts, never with your name or contact details. They are kept for 14 months. See {google_privacy_link}.",
+                "The game also downloads some of its settings, such as prices in coins and how often ads appear, from Firebase Remote Config, another Google service; for this it sends the same installation identifier and app details.",
             ]),
             ("Your choices", [
                 "If you are in the EEA, the UK or Switzerland, the game asks for your consent the first time it starts. You can change your answer at any time in the game: Settings → Ad privacy choices.",
@@ -82,6 +83,7 @@ P = {
             ("Oyun istatistikleri (Google Analytics for Firebase)", [
                 "Hangi bölümlerin fazla zor olduğunu ve oyunun nasıl oynandığını görmek için oyun, Google’ın hizmeti olan Google Analytics for Firebase’e olaylar gönderir: bir bölüm başladığında, bittiğinde ya da süre dolduğunda, süre dolunca hangi seçeneği seçtiğin (ek süre, tekrar dene, daha kolay versiyon) ve bavulun ne kadar dolu olduğu. Firebase bu olaylarla birlikte oyunun bu kurulumu için rastgele bir kimlik, model, sistem sürümü, dil ve uygulama sürümü gibi cihaz ve uygulama bilgileri, IP adresinden çıkarılan yaklaşık konum (ülke ve bölge) ve ne zaman, ne kadar süre oynadığın gibi oturum bilgilerini toplar.",
                 "Firebase reklam için kullanılmaz: oyun onun reklam kimliğini okumasına ya da bu verileri reklam için kullanmasına izin vermez. İstatistikleri yalnızca toplamlar ve grafikler olarak görürüm, hiçbir zaman adın ya da iletişim bilgilerinle birlikte değil. 14 ay saklanır. Bkz. {google_privacy_link}.",
+                "Oyun ayrıca jeton fiyatları ve reklamların ne sıklıkla çıktığı gibi bazı ayarlarını Google’ın bir başka hizmeti olan Firebase Remote Config’ten indirir; bunun için aynı kurulum kimliğini ve uygulama bilgilerini gönderir.",
             ]),
             ("Seçeneklerin", [
                 "AEA’da, Birleşik Krallık’ta ya da İsviçre’deysen oyun ilk açılışta onayını sorar. Cevabını oyunda istediğin zaman değiştirebilirsin: Ayarlar → Reklam gizlilik seçenekleri.",
@@ -123,6 +125,7 @@ P = {
             ("Estadísticas del juego (Google Analytics for Firebase)", [
                 "Para ver qué niveles son demasiado difíciles y cómo se juega, el juego envía eventos a Google Analytics for Firebase, un servicio de Google: cuando un nivel empieza, se completa o se acaba el tiempo, qué opción eliges cuando se acaba el tiempo (tiempo extra, reintentar, una versión más fácil) y cuánto se llenó la maleta. Con estos eventos, Firebase recopila un identificador aleatorio de esta instalación del juego, información del dispositivo y de la app como modelo, versión del sistema, idioma y versión de la app, una ubicación aproximada (país y región) obtenida de tu IP y datos de sesión como cuándo y cuánto tiempo juegas.",
                 "Firebase no se usa para publicidad: el juego no le permite leer tu identificador de publicidad ni usar estos datos para anuncios. Solo veo las estadísticas como totales y gráficos, nunca con tu nombre ni tus datos de contacto. Se conservan 14 meses. Consulta la {google_privacy_link}.",
+                "El juego también descarga algunos de sus ajustes, como los precios en monedas y la frecuencia de los anuncios, de Firebase Remote Config, otro servicio de Google; para ello envía el mismo identificador de instalación y los datos de la app.",
             ]),
             ("Tus opciones", [
                 "Si estás en el EEE, el Reino Unido o Suiza, el juego te pide tu consentimiento la primera vez que se abre. Puedes cambiar tu respuesta cuando quieras en el juego: Ajustes → Opciones de privacidad de anuncios.",
@@ -164,6 +167,7 @@ P = {
             ("Estatísticas do jogo (Google Analytics for Firebase)", [
                 "Para ver quais fases estão difíceis demais e como o jogo é jogado, o jogo envia eventos ao Google Analytics for Firebase, um serviço do Google: quando uma fase começa, é concluída ou o tempo acaba, qual opção você escolhe quando o tempo acaba (tempo extra, tentar de novo, uma versão mais fácil) e quanto a mala estava cheia. Com esses eventos, o Firebase coleta um identificador aleatório desta instalação do jogo, informações do aparelho e do app como modelo, versão do sistema, idioma e versão do app, uma localização aproximada (país e região) obtida pelo seu IP e dados da sessão, como quando e por quanto tempo você joga.",
                 "O Firebase não é usado para publicidade: o jogo não permite que ele leia seu identificador de publicidade nem use esses dados para anúncios. Vejo as estatísticas apenas como totais e gráficos, nunca com seu nome ou dados de contato. Elas são guardadas por 14 meses. Veja a {google_privacy_link}.",
+                "O jogo também baixa algumas configurações, como os preços em moedas e a frequência dos anúncios, do Firebase Remote Config, outro serviço do Google; para isso envia o mesmo identificador de instalação e os dados do app.",
             ]),
             ("Suas escolhas", [
                 "Se você estiver no EEE, no Reino Unido ou na Suíça, o jogo pede seu consentimento na primeira vez em que é aberto. Você pode mudar sua resposta quando quiser no jogo: Configurações → Opções de privacidade de anúncios.",
@@ -205,6 +209,7 @@ P = {
             ("Spielstatistiken (Google Analytics for Firebase)", [
                 "Um zu sehen, welche Level zu schwer sind und wie das Spiel gespielt wird, sendet das Spiel Ereignisse an Google Analytics for Firebase, einen Dienst von Google: wenn ein Level beginnt, geschafft wird oder die Zeit abläuft, welche Option du wählst, wenn die Zeit abläuft (Extrazeit, nochmal, eine leichtere Version), und wie voll der Koffer war. Mit diesen Ereignissen erhebt Firebase eine zufällige Kennung dieser Installation des Spiels, Geräte- und App-Informationen wie Modell, Systemversion, Sprache und App-Version, einen aus deiner IP-Adresse abgeleiteten ungefähren Standort (Land und Region) sowie Sitzungsdaten, etwa wann und wie lange du spielst.",
                 "Firebase wird nicht für Werbung genutzt: Das Spiel erlaubt ihm weder, deine Werbe-ID zu lesen, noch diese Daten für Werbung zu verwenden. Ich sehe die Statistiken nur als Summen und Diagramme, nie mit deinem Namen oder deinen Kontaktdaten. Sie werden 14 Monate gespeichert. Siehe {google_privacy_link}.",
+                "Außerdem lädt das Spiel einige Einstellungen, etwa Münzpreise und wie oft Werbung erscheint, von Firebase Remote Config, einem weiteren Dienst von Google; dafür sendet es dieselbe Installationskennung und App-Angaben.",
             ]),
             ("Deine Wahlmöglichkeiten", [
                 "Wenn du dich im EWR, im Vereinigten Königreich oder in der Schweiz befindest, fragt das Spiel beim ersten Start nach deiner Einwilligung. Du kannst deine Antwort jederzeit im Spiel ändern: Einstellungen → Werbe-Datenschutzoptionen.",
@@ -246,6 +251,7 @@ P = {
             ("Statistiques du jeu (Google Analytics for Firebase)", [
                 "Pour voir quels niveaux sont trop difficiles et comment on joue, le jeu envoie des événements à Google Analytics for Firebase, un service de Google : quand un niveau commence, est réussi ou que le temps est écoulé, l’option que tu choisis quand le temps est écoulé (temps supplémentaire, réessayer, une version plus facile) et le taux de remplissage de la valise. Avec ces événements, Firebase collecte un identifiant aléatoire de cette installation du jeu, des informations sur l’appareil et l’app comme le modèle, la version du système, la langue et la version de l’app, une localisation approximative (pays et région) déduite de ton IP, et des données de session comme le moment et la durée de jeu.",
                 "Firebase n’est pas utilisé pour la publicité : le jeu ne lui permet ni de lire ton identifiant publicitaire ni d’utiliser ces données pour des publicités. Je vois ces statistiques uniquement sous forme de totaux et de graphiques, jamais avec ton nom ou tes coordonnées. Elles sont conservées 14 mois. Voir la {google_privacy_link}.",
+                "Le jeu télécharge aussi certains réglages, comme les prix en pièces et la fréquence des publicités, depuis Firebase Remote Config, un autre service de Google ; pour cela il envoie le même identifiant d’installation et les informations de l’app.",
             ]),
             ("Tes choix", [
                 "Si tu te trouves dans l’EEE, au Royaume-Uni ou en Suisse, le jeu te demande ton consentement au premier lancement. Tu peux modifier ta réponse à tout moment dans le jeu : Réglages → Choix de confidentialité des pubs.",
